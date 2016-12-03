@@ -1,6 +1,4 @@
 '''  
-[ ALL OF THIS SHOULD BE IN A "README.md" FILE ]
-
 Hangman Part 2: The Game  (15 points possible)
 
 [from "p3-5-Hangman-2.py]
@@ -30,11 +28,6 @@ There are four important pieces of information you may wish to store:
 * After each round, you should also display to the user the partially
   guessed word so far, as well as letters that the user has not yet guessed.
 
-Note that if you choose to use the helper functions, you do not need to paste
-your definitions in the box. We've supplied our implementations of these
-functions for your use in this part of the problem. If you use additional
-helper functions, you need to paste the definitions here.
-
 Hints:
     (1) You should start by noticing where we're using the provided functions
       (at the top of ps3_hangman.py) to load the words and pick a random one.
@@ -48,9 +41,8 @@ Hints:
 '''
 
 ## Observations, thoughts, notes
-# This is really more like "Wheel Of Fortune" than Hangman, because we're not
-# displaying the gallows and stick figure, just placeholders for the letters.
-# I refactored loadWords() to get it running (Py 2 vs 3?)
+# I refactored their pre-written loadWords() function to get it running
+# properly, and to run on Python 3.x.
 
 #######################################################################
 
@@ -64,6 +56,7 @@ WORDLIST_FILENAME = "words.txt"  # a long string of words separated by spaces
 def loadWords():
     '''Returns a list of valid words. Words are strings of lowercase letters.
     Depending on size of word list, function may take a while to finish'''
+    # MITx pre-written code commented-out.
     #inFile = open(WORDLIST_FILENAME, 'r', 0)
     #line = inFile.readline()                  # line: string
     #wordlist = string.split(line)
